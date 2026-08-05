@@ -351,3 +351,9 @@ Go to the cron directory, list the files there, read bandit24's cron job entry, 
 
 **Concept:**
 The target directory has overly permissive file permissions, allowing a script to be placed there by a user who shouldn't be able to modify it. The cron job doesn't verify who created or owns the script before running it — it simply executes whatever is present at the scheduled time, using the cron job's own (higher) privileges rather than the privileges of whoever placed the script there.
+
+*(Last sentence expanded from your notes with the standard reason this is a privilege-escalation technique — worth confirming this matches what you actually observed.)*
+
+
+
+
